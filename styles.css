@@ -77,8 +77,52 @@ div{
     font-size: 15px;
 }
 
+.tags {
+    margin-bottom: 8px;
+}
+
+.top .me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+}
+
+.top .me img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+
+}
+
 .top .lead {
     line-height: 2;
+}
+
+.top .nav {
+    margin-bottom: 20px;
+}
+
+.top .nav a {
+    text-decoration:none;
+    padding: 20px;
+}
+
+.top .nav a span {
+
+    padding: 4px;
+    font-size: 25px;
+    color: white;
+    text-decoration:none;
+    border-bottom: 2px solid red;
+}
+
+.top .nav a span:hover {
+    color: red;
+    transition: 0.5s;
+    cursor: pointer;
 }
 
 .email {
