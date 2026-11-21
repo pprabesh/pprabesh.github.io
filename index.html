@@ -1,397 +1,304 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Prabesh</title>
-        <link rel="stylesheet" type="text/css" href="styles.css">
-        <link rel="aug" href="/img/pp.png" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
-        <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
-    </head>
-    <body>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prabesh Pathak — Frontend-focused Software Engineer</title>
+    <meta name="description" content="Prabesh Pathak — software engineer with 6+ years building scalable web apps, specializing in frontend architecture, performance, accessibility and AI-powered interfaces.">
+    <link rel="icon" href="img/pp.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Apply saved theme before paint to avoid a flash -->
+    <script>
+        try { var t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+    </script>
+</head>
+<body>
+    <a href="#main" class="skip-link">Skip to content</a>
 
-        <div class="top">
-                <div class="me">
-                    <img src="img/pp.png" alt="DEEP"/>
-                    <h1 class="name"><strong>Prabesh</strong> Pathak</h1>
-                </div>
-                <span class="email">pathak.prabes@gmail.com | ppathak@bgsu.edu</span>
-                <div class="tags">
-                    <span class="job-title">Computer Science</span>
-                    <span class="job-title">Programming</span>
-                    <span class="job-title">Graphics Designing</span>
-                    <span class="job-title">Project Management</span>
-                </div>
-                <div class="nav">
-                    <a href="#container">
-                        <span>
-                            Skills
-                        </span>
-                    </a>
-                    <a href="#work">
-                        <span>
-                            Experience
-                        </span>
-                    <a href="#projects">
-                        <span>
-                            Projects
-                        </span>
-                    </a>
-                </div>
-                <span class="lead"> That guy from Nepal who loves computers. My other fields of interest include Music, Esports, Travelling, Hiking and Football.</span>
-                <span class="lead"> My research interests includes web application development, machine learning, data science and visualization.</span>
-                <div class="contact">
-                    <a href="https://github.com/pprabesh/" target="_blank" >
-                        <ion-icon name="logo-github"></ion-icon>
-                    </a>
-                    <a href="https://https://www.linkedin.com/in/pprabesh/" target="_blank" >
-                        <ion-icon name="logo-linkedin"></ion-icon>
-                    </a>
-                    <a href="https://twitter.com/_pprabesh" target="_blank" >
-                        <ion-icon name="logo-twitter"></ion-icon>
-                    <a href="https://instagram.com/pprabesh" target="_blank" >
-                        <ion-icon name="logo-instagram"></ion-icon>
-                    </a>
-                </div>
-                <a href="#container" class="arrow ion-ios-arrow-down"></a>
-        </div>
+    <header class="site-header">
+        <nav class="nav wrap" aria-label="Primary">
+            <a href="#top" class="brand"><span class="brand-bracket">&lt;</span>Prabesh<span class="brand-bracket"> /&gt;</span></a>
+            <div class="nav-links">
+                <a href="#experience">Experience</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="nav-tools">
+                <button class="icon-btn kbd-btn" id="open-palette" type="button" aria-label="Open command menu" title="Command menu">
+                    <kbd class="kbd-mod">⌘</kbd><kbd>K</kbd>
+                </button>
+                <button class="icon-btn" id="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle theme">
+                    <svg class="icon-sun" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="12" cy="12" r="4.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                    <svg class="icon-moon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+                </button>
+            </div>
+        </nav>
+    </header>
 
-        <section id="container">
-            <div class="container">
-                <h1 class="name"><strong>Skills & Interests</strong></h1>
-                <div class="sections">
-                    <div class="list-section">
-                        <h2>Programming</h2>
-                        <div class="tags">
-                            <span>Python</span>
-                            <span>Javascript</span>
-                            <span>C++</span>
-                            <span>C</span>
-                        </div>
+    <main id="main">
+
+        <!-- Intro -->
+        <section class="hero" id="top">
+            <div class="hero-inner wrap">
+                <img src="img/pp.png" alt="Photo of Prabesh Pathak" class="avatar" width="128" height="128">
+                <div>
+                    <p class="eyebrow mono"><span class="status-dot" aria-hidden="true"></span>Software Engineer · Dallas, TX</p>
+                    <h1>Hi, I'm Prabesh.</h1>
+                    <p class="typed-line mono" aria-label="I build fast, accessible, delightful interfaces.">
+                        <span aria-hidden="true">I build <span id="typed" class="typed">fast</span><span class="caret"></span> interfaces.</span>
+                    </p>
+                    <p class="lead">
+                        6+ years building scalable enterprise web apps, specializing in frontend architecture,
+                        performance, accessibility and AI-powered interfaces — with a full-stack and cloud background
+                        and published research.
+                    </p>
+                    <div class="hero-actions">
+                        <a class="btn btn-primary" href="mailto:pathak.prabes@gmail.com">Say hello 👋</a>
+                        <a class="btn" href="https://github.com/pprabesh" target="_blank" rel="noopener">GitHub</a>
+                        <a class="btn" href="https://www.linkedin.com/in/pprabesh/" target="_blank" rel="noopener">LinkedIn</a>
                     </div>
-                    <div class="list-section">
-                        <h2>Web Development</h2>
-                        <div class="tags">
-                            <span>ReactJS</span>
-                            <span>Node.js</span>
-                            <span>Django</span>
-                            <span>Express</span>
-                            <span>Jquery</span>
-                            <span>Mapbox</span>
-                            <span>D3</span>
-                            <span>SASS</span>
-                        </div>
-                    </div>
-                    <div class="list-section">
-                        <h2>Cloud and Infrastructure</h2>
-                        <div class="tags">
-                            <span>Amazon Web Services(AWS)</span>
-                            <span>Docker</span>
-                        </div>
-                    </div>	
-
                 </div>
-                <div class="sections">
-                    <div class="list-section">
-                        <h2>Data Science / Machine Learning</h2>
-                        <div class="tags">
-                            <span>Pandas</span>
-                            <span>Tensorflow</span>
-                            <span>Keras</span>
-                            <span>PyTorch</span>
-                        </div>
-                    </div>	
-                    <div class="list-section">
-                        <h2>Database</h2>
-                        <div class="tags">
-                            <span>MySQL</span>
-                            <span>PostgreSQL</span>
-                            <span>MongoDB</span>
-                        </div>
-                    </div>	
-                    <div class="list-section">
-                        <h2>UI/UX</h2>
-                        <div class="tags">
-                            <span>Adobe AI</span>
-                            <span>Adobe PS</span>
-                            <span>Adobe ID</span>
-                            <span>Adobe XD</span>
-                            <span>Zepplin</span>
-                            <span>GIMP</span>
-                            <span>Inkscape</span>
-                        </div>
-                    </div>	
-                </div>
-
             </div>
         </section>
 
-        <section id= "work">
-        <div class="cards">
-            <h2>Work Experience</h2>
-            <div class="card">
-                <div class="skill-meta">
-                    <h3>Senecio Corporation</h3>
-                    <h4>Software Engineering Intern</h4>
-                    <span>
-                        <br>
-                        ▪ Built a ReactJS project from scratch and added modules to handle API endpoints.
-                        <br>
-                        ▪ Added token authentication and built REST API endpoints using Django.
-                        <br>
-                        ▪ Added a deployment process using docker, postgres and AWS. Used s3 bucket to host frontend and ec2 with CloudFront to host backend server.
-                        <br>
-                        ▪ Worked under Agile methodology to deliver every week with weekly reports and discussion.
-                    </span>
-                </div>
-                <div class="stack">
-                    <h3>Stack</h3>
-                    <div class="tags">
-                        <span>Django</span>
-                        <span>ReactJS</span>
-                        <span>Docker</span>
-                        <span>AWS</span>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="skill-meta">
-                    <h3>Bowling Green State University</h3>
-                    <h4>Research Assistant</h4>
-                    <span>
-                        <br>
-                        ▪ Currently researching in the field of Security Vetting of Android Apps using Machine Learning.
-                        <br>
-                        ▪ Analyzed a huge dataset(~60k) of android apps and implemented static and dynamic analysis for malware 
-                        detection.
-                        <br>
-                        ▪ Implemented RNN (LSTM) model to predict malicious and benign app.
-                        <br>
-                        ▪ Setup AWS architecture to run the framework.
-                        <br>
-                        ▪ Experimented the model with the dataset of another research paper (MalDozer).
-                        <br>
-                        ▪ Setup s3fuse mounting to move from EBS to s3. 
-                    </span>
-                </div>
-                <div class="stack">
-                    <h3>Stack</h3>
-                    <div class="tags">
-                        <span>Python</span>
-                        <span>Keras</span>
-                        <span>Tensorflow</span>
-                        <span>RNN/LSTM</span>
-                        <span>AWS</span>
-                    </div>
-                </div>
-            </div>
+        <!-- Experience -->
+        <section id="experience" class="section wrap">
+            <h2 class="section-title mono">&lt;Experience /&gt;</h2>
 
-            <div class="card">
-                <div class="skill-meta">
-                    <h3>Togglecorp Solutions Pvt. Ltd. </h3>
-                    <h4>Co-Founder/Designer/Developer</h4>
-                    <span>
-                        <br>
-                        ▪ Established own software company based in Nepal with 3 other partners and worked as a developer and 
-                        Project lead for various national and international projects. Some notable clients include UNHCR, ACAPS, 
-                        IFRC, IDMC, World Vision, UKAID, ACLED, etc.
-                        <br>
-                        ▪ Worked as a Project Lead and frontend developer on DEEP - A semi-automated data analysis and 
-                        visualization tool developed for the humanitarian community. DEEP’s board and funding sources are 
-                        comprised of OCHA, ACAPS, OHCHR, JIPS, IFRC, IDMC and UNHCR .The software itself is hosted on 
-                        web platform with highly scalable database and a full-fledged machine learning server to support data 
-                        analysis. It is a web-based application that allows the humanitarian analyst to explore the huge database for
-                        entry or extraction process.
-                        <br>
-                        ▪ Worked as a frontend designer to create an interactive dashboard IDMC-MM : Monitoring tool for analysts 
-                        to monitor the data collected from various media sources. This was built for and is currently being used by 
-                        IDMC, Geneva. It was built using React JS, Mapbox, HTML/CSS.
-                        <br>
-                        ▪ Project Manager and Frontend Developer for a project funded by UKAID namely DFID-DVS : Data 
-                        visualization system for DFID Nepal, which is a department under the Government of UK. I contributed to 
-                        the interactive dashboard using React JS, Mapbox, HTML/CSS that helped to track DFID activities
-                        <br>
-                        ▪ Worked as UI/UX developer for a mobile app for android and iOS used for real time Nepali stocks data 
-                        browsing and visualization tool targeted to investors using React native.
-                        <br>
-                        ▪ Worked as both backend and frontend developers in building tools for various NGOs and INGOs including 
-                        ACLED, People in Need, World Vision
-                        ▪ Currently researching in the field of Security Vetting of Android Apps using Machine Learning.
-                    </span>
-                </div>
-                <div class="stack">
-                    <h3>Stack</h3>
-                    <div class="tags">
-                        <span>JIRA</span>
-                        <span>Python</span>
-                        <span>React</span>
-                        <span>Mapbox</span>
-                        <span>D3</span>
-                        <span>Adobe AI</span>
-                        <span>Adobe XD</span>
+            <ol class="timeline">
+                <li class="job">
+                    <div class="job-head">
+                        <div>
+                            <h3>Software Development Engineer II</h3>
+                            <span class="org">LivePerson (SoundHound AI) · New York, NY</span>
+                        </div>
+                        <span class="date mono">Jul 2021 — Present</span>
                     </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="skill-meta">
-                    <h3>Office for the Coordination of Humanitarian Affairs (UN - OCHA)</h3>
-                    <h4>Data Analyst</h4>
-                    <span>
-                        <br>
-                        ▪ Assisted in administering and analyzing OCHA’s database during the Nepal earthquake response. The 
-                        database was composed of data from primary UN sources as well as public sources such as social media and 
-                        news sources.
-                    </span>
-                </div>
-                <div class="stack">
-                    <h3>Stack</h3>
-                    <div class="tags">
-                        <span>MySQL</span>
-                        <span>MS-Excel</span>
-                        <span>ESRI</span>
+                    <ul class="points">
+                        <li>Architected multi-threaded web messaging infrastructure, scaling the web SDK from <strong>1 to 5 concurrent conversations</strong> with isolated session state across chat, surveys and voice/video.</li>
+                        <li>Led the <strong>Backbone.js → Vue 3</strong> migration of core modules with reusable components and Jest/Playwright coverage, cutting maintenance costs 20%.</li>
+                        <li>Engineered GenAI-powered messaging with real-time LLM token streaming, bot-vs-human detection, branded animations, layout stabilization and reduced-motion support.</li>
+                        <li>Cut messaging load time <strong>44% (9s → 5s)</strong> through resource preloading and eliminating unnecessary asset requests.</li>
+                        <li>Primary accessibility engineer — delivered <strong>WCAG 2.2 / ADA</strong> compliance and cleared audit blockers for Tier-1 clients.</li>
+                        <li>Hardened security and reliability by fixing XSS/CSP vulnerabilities and adding secure message persistence across network drops and browser sessions.</li>
+                        <li>Built an OpenTelemetry-powered observability tool for error and performance monitoring, speeding up RCA and on-call response.</li>
+                        <li>Migrated pipelines to GitLab CI/CD and GCP, mentored engineers through the move, and streamlined processes — lifting team productivity 30%.</li>
+                    </ul>
+                    <ul class="chips chips-sm"><li>Vue 3</li><li>TypeScript</li><li>Jest</li><li>Playwright</li><li>OpenTelemetry</li><li>GCP</li></ul>
+                </li>
+
+                <li class="job">
+                    <div class="job-head">
+                        <div>
+                            <h3>Graduate Research Assistant</h3>
+                            <span class="org">Bowling Green State University · Ohio</span>
+                        </div>
+                        <span class="date mono">Aug 2019 — May 2021</span>
                     </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="skill-meta">
-                    <h3>Microsoft Innovation Center</h3>
-                    <h4>Microsoft Student Partner</h4>
-                    <span>
-                        <br>
-                        ▪ MIC Nepal provides students, customers and partners with a comprehensive set of programs and services. I 
-                        am one of the four MSPs from my college. Our team organized various tech events at my campus. Also ran 
-                        workshops, hackathons and meetups.
-                        <br>
-                        ▪ Took C# certification exam and passed.
-                    </span>
-                </div>
-                <div class="stack">
-                    <h3>Stack</h3>
-                    <div class="tags">
-                        <span>dotnet</span>
-                        <span>C#</span>
+                    <ul class="points">
+                        <li>Applied deep learning to ~200k Android apps for security vetting on AWS.</li>
+                        <li>Primary author of one paper and co-author of another on deep-learning-based Android app security (see <a href="#research">Research</a>).</li>
+                    </ul>
+                    <ul class="chips chips-sm"><li>Python</li><li>Deep Learning</li><li>AWS</li></ul>
+                </li>
+
+                <li class="job">
+                    <div class="job-head">
+                        <div>
+                            <h3>Software Engineering Intern</h3>
+                            <span class="org">Senecio Corporation · Ohio</span>
+                        </div>
+                        <span class="date mono">May 2020 — Aug 2020</span>
                     </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="skill-meta">
-                    <h3>LOCUS</h3>
-                    <h4>Event Manager</h4>
-                    <span>
-                        <br>
-                        ▪ Worked as Event Manager for the 13th National Technological Festival Organized by the LOCUS 
-                        Committee of Pulchowk Campus. Organized various events such as GIT Workshop, FOSS Workshop, 
-                        Python Workshop, Hack-a-week, AppQuest, Yomari Code Camp, etc.
-                    </span>
-                </div>
-            </div>
-            <div class="card">
-                <div class="skill-meta">
-                    <h3>TEDxPatan</h3>
-                    <h4>Technical and Communication Manager</h4>
-                    <span>
-                        <br>
-                        ▪ Actively worked in the organizing team of TEDxPatan that organizes the world famous TEDx talks in 
-                        Nepal. So far organized TEDxPatan 2015, TEDxPatanSalon, TEDxPatanAdventures and TEDxPatan 2016.
-                    </span>
-                </div>
-            </div>
-        </div>
+                    <ul class="points">
+                        <li>Built a React/Redux app with Django APIs and automated deployment with Docker and AWS.</li>
+                    </ul>
+                    <ul class="chips chips-sm"><li>React</li><li>Redux</li><li>Django</li><li>Docker</li><li>AWS</li></ul>
+                </li>
+
+                <li class="job">
+                    <div class="job-head">
+                        <div>
+                            <h3>Software Engineer &amp; Co-Founder</h3>
+                            <span class="org">Togglecorp Solutions · Kathmandu, Nepal</span>
+                        </div>
+                        <span class="date mono">Nov 2016 — Aug 2019</span>
+                    </div>
+                    <ul class="points">
+                        <li>Co-founded and led a software company delivering national and international projects.</li>
+                        <li>Led <strong>DEEP</strong>, a humanitarian data analysis platform (React, Django); built a Mapbox dashboard for UKAID-funded <strong>DFID-DVS</strong>; engineered the UI for a stock market React Native app.</li>
+                    </ul>
+                    <ul class="chips chips-sm"><li>React</li><li>React Native</li><li>Django</li><li>Mapbox</li></ul>
+                </li>
+            </ol>
         </section>
 
-        <section id= "projects">
-        <div class="cards">
-            <h2>Projects</h2>
-            <div class="card">
-                <div class="skill-meta">
-                    <h3>DEEP</h3>
-                    <h4><a href="https://beta.thedeep.io/" target ="_blank">View app </a></h4>
-                    <span>
-                        <br>
-                        ▪ DEEP is an intelligent web-based platform offering a suite of collaborative tools tailored towards humanitarian crisis responses.
-                        <br>
-                        ▪ It includes common analysis workflows and frameworks for thinking using both structured and unstructured, quantitative and qualitative data.
-                        <br>
-                        ▪ By using a customizable analysis frameworks, users can easily catalog information contained in large amounts of documents and export it to a variety of formats.
-                        <br>
-                        <img src="img/deep.gif" alt="DEEP"/>
-                    </span>
+        <!-- Skills -->
+        <section id="skills" class="section wrap">
+            <h2 class="section-title mono">&lt;Skills /&gt;</h2>
+            <div class="skills-grid">
+                <div class="skill-group">
+                    <h3>Languages</h3>
+                    <ul class="chips"><li>JavaScript</li><li>TypeScript</li><li>Python</li><li>HTML5</li><li>CSS3</li><li>Sass/SCSS</li></ul>
                 </div>
-                <div class="stack">
-                    <h3>Stack</h3>
-                    <div class="tags">
-                        <span>Django</span>
-                        <span>ReactJS</span>
-                        <span>Docker</span>
-                        <span>AWS</span>
-                    </div>
+                <div class="skill-group">
+                    <h3>Frontend</h3>
+                    <ul class="chips"><li>Vue 3</li><li>React</li><li>Redux</li><li>Tailwind CSS</li><li>Design Systems</li><li>Component Libraries</li></ul>
                 </div>
-            </div>
-            <div class="card">
-                <div class="skill-meta">
-                    <h3>SIMANA</h3>
-                    <h4><a href="https://simana.io/" target ="_blank">View app </a></h4>
-                    <span>
-                        <br>
-                        ▪ Small map game for school students
-                        <br>
-                        ▪ Guess the province/disctrict in the given timeframe
-                        <br>
-                        <img src="img/simana.gif" alt="Simana"/>
-                    </span>
+                <div class="skill-group">
+                    <h3>Performance &amp; Testing</h3>
+                    <ul class="chips"><li>Jest</li><li>Playwright</li><li>Lighthouse</li><li>Web Performance</li></ul>
                 </div>
-                <div class="stack">
-                    <h3>Stack</h3>
-                    <div class="tags">
-                        <span>Django</span>
-                        <span>ReactJS</span>
-                        <span>Docker</span>
-                        <span>AWS</span>
-                    </div>
+                <div class="skill-group">
+                    <h3>Accessibility &amp; Security</h3>
+                    <ul class="chips"><li>WCAG / ADA</li><li>VoiceOver</li><li>NVDA</li><li>JAWS</li><li>XSS Prevention</li><li>CSP</li></ul>
+                </div>
+                <div class="skill-group">
+                    <h3>API &amp; Backend</h3>
+                    <ul class="chips"><li>REST</li><li>WebSockets</li><li>Node.js</li><li>Django</li><li>PostgreSQL</li><li>MySQL</li></ul>
+                </div>
+                <div class="skill-group">
+                    <h3>Cloud &amp; DevOps</h3>
+                    <ul class="chips"><li>GCP</li><li>AWS</li><li>Docker</li><li>OpenTelemetry</li><li>Grafana</li><li>Kibana</li></ul>
                 </div>
             </div>
-            <div class="card">
-                <div class="skill-meta">
-                    <h3>AUGVENTS</h3>
-                    <h4><a href="https://augvents.com/" target ="_blank">View app </a></h4>
-                    <span>
-                        <br>
-                        ▪ An augmented reality application to locate nearby events in real time.
-                        <br>
-                        <img src="img/augvents.gif" alt="Augvents"/>
-                    </span>
-                </div>
-                <div class="stack">
-                    <h3>Stack</h3>
-                    <div class="tags">
-                        <span>Node.js</span>
-                        <span>ReactJS</span>
-                        <span>Postgresql</span>
-                        <span>Express</span>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="skill-meta">
-                    <h3>DFID-DVS</h3>
-                    <h4><a href="https://dvs-nepal.org/" target ="_blank">View app </a></h4>
-                    <span>
-                        <br>
-                        ▪ Data visualization platform to track DFID activities in Nepal.
-                    </span>
-                </div>
-                <div class="stack">
-                    <h3>Stack</h3>
-                    <div class="tags">
-                        <span>Django</span>
-                        <span>ReactJS</span>
-                        <span>Docker</span>
-                        <span>AWS</span>
-                    </div>
-                </div>
-            </div>
-        </div>
         </section>
 
+        <!-- Interests -->
+        <section id="interests" class="section wrap">
+            <h2 class="section-title mono">&lt;Interests /&gt;</h2>
+            <div class="interests">
+                <div class="interest-col">
+                    <h3>Things I geek out about</h3>
+                    <ul class="chips chips-accent">
+                        <li>Frontend architecture</li><li>UI/UX &amp; motion</li><li>Design systems</li><li>Accessibility</li><li>Web performance</li><li>AI-powered interfaces</li>
+                    </ul>
+                </div>
+                <div class="interest-col">
+                    <h3>Away from the keyboard</h3>
+                    <ul class="chips chips-accent">
+                        <li>🎵 Music</li><li>🎮 Esports</li><li>✈️ Travelling</li><li>🥾 Hiking</li><li>⚽ Football</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-    </body>
+        <!-- Projects -->
+        <section id="projects" class="section wrap">
+            <h2 class="section-title mono">&lt;Projects /&gt;</h2>
+            <div class="projects">
+                <article class="project">
+                    <div class="browser" aria-hidden="true"><span></span><span></span><span></span></div>
+                    <img src="img/deep.gif" alt="DEEP platform demo" loading="lazy">
+                    <div class="project-body">
+                        <h3>DEEP</h3>
+                        <p>A collaborative analysis platform for humanitarian crisis response, backed by OCHA, UNHCR, IFRC and others.</p>
+                        <ul class="chips chips-sm"><li>React</li><li>Django</li><li>Docker</li><li>AWS</li></ul>
+                        <a class="link" href="https://beta.thedeep.io/" target="_blank" rel="noopener">View app <span aria-hidden="true">→</span></a>
+                    </div>
+                </article>
+                <article class="project">
+                    <div class="browser" aria-hidden="true"><span></span><span></span><span></span></div>
+                    <img src="img/simana.gif" alt="Simana map game demo" loading="lazy">
+                    <div class="project-body">
+                        <h3>Simana</h3>
+                        <p>A map game for school students — guess the province or district before the timer runs out.</p>
+                        <ul class="chips chips-sm"><li>React</li><li>Django</li><li>Docker</li><li>AWS</li></ul>
+                        <a class="link" href="https://simana.io/" target="_blank" rel="noopener">View app <span aria-hidden="true">→</span></a>
+                    </div>
+                </article>
+                <article class="project">
+                    <div class="browser" aria-hidden="true"><span></span><span></span><span></span></div>
+                    <img src="img/augvents.gif" alt="Augvents AR app demo" loading="lazy">
+                    <div class="project-body">
+                        <h3>Augvents</h3>
+                        <p>An augmented reality app for finding nearby events in real time.</p>
+                        <ul class="chips chips-sm"><li>React</li><li>Node.js</li><li>Express</li><li>PostgreSQL</li></ul>
+                        <a class="link" href="https://augvents.com/" target="_blank" rel="noopener">View app <span aria-hidden="true">→</span></a>
+                    </div>
+                </article>
+                <article class="project">
+                    <div class="browser" aria-hidden="true"><span></span><span></span><span></span></div>
+                    <div class="project-placeholder" aria-hidden="true">DVS</div>
+                    <div class="project-body">
+                        <h3>DFID-DVS</h3>
+                        <p>A Mapbox dashboard tracking UKAID-funded DFID activities across Nepal.</p>
+                        <ul class="chips chips-sm"><li>React</li><li>Mapbox</li><li>Django</li></ul>
+                        <a class="link" href="https://dvs-nepal.org/" target="_blank" rel="noopener">View app <span aria-hidden="true">→</span></a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Research, Education, Awards -->
+        <section id="research" class="section wrap">
+            <h2 class="section-title mono">&lt;Research &amp; Education /&gt;</h2>
+            <div class="edu-grid">
+                <div class="card">
+                    <h3>Publications</h3>
+                    <ul class="plain">
+                        <li><strong>Leveraging Attention-Based Deep Neural Networks for Security Vetting of Android Applications</strong><span class="muted"> — primary author</span></li>
+                        <li>Deep-learning-based Android app security analysis<span class="muted"> — co-author, IEEE CNS 2020</span></li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Education</h3>
+                    <ul class="plain">
+                        <li><strong>MS Computer Science</strong> · GPA 4.0<br><span class="muted">Bowling Green State University · 2019 — 2021</span></li>
+                        <li><strong>BS Computer Engineering</strong> · GPA 3.9<br><span class="muted">Tribhuvan University, Nepal · 2012 — 2016</span></li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Awards</h3>
+                    <ul class="plain">
+                        <li>🏆 <strong>Winner</strong>, BGSU ACM Data Hackathon</li>
+                        <li>🎓 Helen &amp; Barney Wood Scholarship, BGSU</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="section wrap contact">
+            <h2 class="section-title mono">&lt;Contact /&gt;</h2>
+            <p class="contact-lead">Got an interface that needs to be faster, friendlier or more accessible? Let's talk.</p>
+            <div class="email-row">
+                <a class="email-link" href="mailto:pathak.prabes@gmail.com">pathak.prabes@gmail.com</a>
+                <button class="copy-btn mono" id="copy-email" type="button">copy</button>
+            </div>
+            <div class="social">
+                <a href="https://github.com/pprabesh" target="_blank" rel="noopener">GitHub</a>
+                <a href="https://gitlab.com/pprabesh" target="_blank" rel="noopener">GitLab</a>
+                <a href="https://www.linkedin.com/in/pprabesh/" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="https://twitter.com/_pprabesh" target="_blank" rel="noopener">Twitter</a>
+                <a href="https://instagram.com/pprabesh" target="_blank" rel="noopener">Instagram</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer wrap">
+        <p>© <span id="year">2026</span> Prabesh Pathak · Hand-written HTML, CSS &amp; vanilla JS. No frameworks were harmed.</p>
+        <p class="hint mono">psst — press <kbd>⌘</kbd><kbd>K</kbd> or try <button type="button" class="linkish" id="inspect-hint">inspect mode</button></p>
+    </footer>
+
+    <!-- Command palette -->
+    <dialog id="palette" class="palette" aria-label="Command menu">
+        <div class="palette-box">
+            <input id="palette-input" class="palette-input" type="text" placeholder="Type a command or jump to…" autocomplete="off" spellcheck="false"
+                   role="combobox" aria-expanded="true" aria-controls="palette-list" aria-autocomplete="list">
+            <ul id="palette-list" class="palette-list" role="listbox"></ul>
+            <div class="palette-foot mono"><span><kbd>↑</kbd><kbd>↓</kbd> navigate</span><span><kbd>↵</kbd> select</span><span><kbd>esc</kbd> close</span></div>
+        </div>
+    </dialog>
+
+    <!-- Inspect-mode tooltip + toast -->
+    <div id="inspect-tip" class="inspect-tip mono" aria-hidden="true"></div>
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
